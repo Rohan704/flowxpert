@@ -1,0 +1,126 @@
+body {
+  font-family: "PF Handbook Pro";
+}
+.navbar {
+  width: 100%;
+  height: 44px;
+  background-color: #c7222a;
+}
+.back {
+  height: inherit;
+  color: white;
+  border: none;
+  width: fit-content;
+}
+.back.btn i {
+  color: white;
+}
+.back.btn:focus {
+  outline: solid white 1px;
+  box-shadow: none;
+}
+.navbar-brand {
+  color: white;
+  font-family: "PF Handbook Pro";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0px;
+  text-align: left;
+  vertical-align: middle;
+}
+.navbar-brand:active,
+.navbar-brand:hover {
+  color: white;
+}
+#Bg1{
+    display:block;margin:64px auto 24px auto;
+}
+
+.heading2 {
+  font-family: 'PF Handbook Pro';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 23px;
+  line-height: 32px;
+  text-align: center;
+  color: #2E2E2E;
+
+}
+.para1 {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 48px;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "PF Handbook Pro";
+  line-height: 20px;
+  text-align: center;
+}
+.links{
+  width: 80%;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 44px;
+  justify-content: center;
+}
+
+.vl{
+  height: auto;
+  width: 2px;
+  margin-left: 24px;
+  margin-right: 24px;
+  background-color: gray;
+  border: none;
+}
+
+.data_quant{
+  font-size: 18px;line-height: 20px;width: auto;font-family: "PF Handbook Pro";color: black;
+}
+.data_type{
+ 
+  font-family: 'PF Encore Sans Pro';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+letter-spacing: 0.32px;
+color: #797979;
+
+}
+
+.btn_space{
+  display: flex;width: 100%;justify-content: center;
+}
+#start_test_btn{
+  width: fit-content;
+  font-size: 20px;
+  line-height: 32px;
+  font-family: "PF Handbook Pro" !important;
+  background-color: #C7222a !important;
+  color: white !important;
+
+}
+
+#start_test_btn:focus,
+#start_test_btn:active,
+#start_test_btn:hover{
+  outline: solid white 1px !important;
+  box-shadow: 0 0 8px red !important;
+}
+
+#Results_req{
+  display:none;
+}
+
+@media (max-width: 576px) {
+  #start_test_btn{
+    width: 100%;
+    margin:20px;
+  }
+}
+/* start_test_btn */

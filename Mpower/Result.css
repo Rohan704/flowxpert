@@ -1,0 +1,963 @@
+/* body {
+  margin: 0;
+  background-color: #F7F7F7 !important;
+} */
+
+.new_bg {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 220px;
+  background-color: #c7222a;
+  z-index: -1;
+}
+
+.background {
+  width: 100%;
+  height: auto;
+  background-image: linear-gradient(#c7222a 200px) !important;
+  padding: 0 16px 0 16px;
+  margin-bottom: 32px;
+}
+
+.back {
+  height: inherit;
+  color: white;
+  border: none;
+}
+.back.btn i {
+  color: white;
+}
+.back.btn:focus {
+  outline: solid white 1px;
+  box-shadow: none;
+}
+.btn:focus{
+  box-shadow: none !important;
+
+}
+
+.results_here {
+  padding-top: 16px;
+  margin: 0px auto 4px auto;
+  font-family: "PF Handbook Pro";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: white;
+  vertical-align: middle;
+}
+.summary_subhead {
+  font-family: "PF Encore Sans Pro";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0.32px;
+  text-align: center;
+  margin: 4px auto 24px auto;
+  color: white;
+}
+
+.results_section {
+  width: 100%;
+}
+.results_chart {
+  width: 100%;
+  min-height: 188px;
+  background-color: white;
+  margin: 0;
+  border-radius: 8px;
+  /* border: solid black 1px; */
+  padding: 16px;
+  box-shadow: 0 0 2px gray;
+}
+
+.charts {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  flex-direction: row;
+  /* justify-content: left; */
+  gap: auto;
+  justify-content: space-between;
+}
+
+/* .depression,
+.anxiety,
+.stress {
+  margin-left: auto;
+  margin-right: auto;
+} */
+
+#img_chart{
+  margin-right: 8px;
+  margin-top: -3px;
+}
+.chart_title {
+  width: 100%;
+  text-align: center;
+  font-family: "PF Encore Sans Pro";
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 12px;
+  letter-spacing: 1.5px;
+  margin: 0 auto 8px auto;
+}
+
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.circular-progress {
+  position: relative;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  margin: 4px auto 12px auto;
+}
+.circular-progress:before {
+  content: "";
+  position: absolute;
+  height: 84%;
+  width: 84%;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+.value-container {
+  position: relative;
+  font-family: "PF Encore Sans Pro";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0.3199999928474426px;
+  text-align: center;
+  color: #4c4c4c;
+}
+
+.chart_info {
+  font-family: "PF Encore Sans Pro";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.32px;
+  text-align: left;
+}
+
+.navigations {
+  display: flex;
+  margin-top: 3vh;
+  justify-content: space-between;
+}
+.retake_test {
+  float: left;
+}
+#view_details {
+  float: right;
+  margin-left: auto;
+  color: rgb(199, 34, 42);
+}
+.redir_btn{
+  color: rgb(199, 34, 42);
+}
+.consult_expert_section {
+  padding: 0 16px;
+}
+.consult_expert_inner_section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  box-shadow: 0px 0px 2px gray;
+  background-color: white;
+  border-radius: 8px;
+}
+.consult_expert_section h1 {
+  font-family: "PF Handbook Pro";
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin-bottom: 8px;
+}
+.consult_expert_section p {
+  font-family: "PF Encore Sans Pro";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin-bottom: 16px;
+}
+
+.consult_expert_div {
+  padding: 16px;
+  background-color: #f2f6fe;
+  border-radius: 8px;
+  display: flex;
+  margin-bottom: 32px;
+}
+
+.consult_expert_txt {
+  width: 80%;
+}
+.consult_expert_img {
+  width: 20%;
+}
+.consult_expert_txt h1 {
+  font-family: "PF Handbook Pro";
+  width: fit-content;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin-bottom: 8px;
+  color: #4374d0;
+}
+.consult_expert_txt p {
+  font-family: "PF Encore Sans Pro";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #4c4c4c;
+}
+.modal1-header{
+  background-color: #F9F9FB;
+}
+#reqsent_header{
+  background-color: white !important;
+}
+.modal1-title span {
+  display: flex;
+  justify-content: space-between;
+}
+.modal1-title span h1 {
+  font-family: "PF Handbook Pro";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin: 4px 0;
+  width: fit-content;
+  color: black !important;
+}
+.modal1-title p {
+  font-family: "PF Encore Sans Pro";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin: 4px 0;
+}
+.close1 i {
+  font-size: 20px !important;
+  font-weight: 900;
+  color: #c7222a;
+  padding: 0 !important;
+  background-color: white;
+  margin-top: 0;
+  margin-bottom: auto;
+}
+
+.close1{
+  background-color: none !important;
+}
+
+.screenings,
+.councelling {
+  width: 50%;
+}
+
+.screenings h2,
+.councelling h2 {
+  font-family: "PF Encore Sans Pro";
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 12px;
+  letter-spacing: 1.5px;
+  text-align: left;
+}
+.screenings p{
+  margin-bottom: 4px;
+}
+
+.availed {
+  font-family: "PF Handbook Pro";
+  font-size: 29px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #4374d0;
+}
+.bookings {
+  width: 100%;
+}
+#book_ss_modal_btn {
+  background-color: #c7222a;
+}
+#book_ss_modal_btn:active {
+  border-radius: 4px;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: center;
+}
+#book_ss_modal_btn {
+  margin-right: auto;
+  margin-left: auto;
+}
+.bookings_title {
+  font-family: "PF Handbook Pro";
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: black !important;
+  margin-bottom: 4px;
+}
+
+.reg_cards {
+  display: flex;
+  grid-gap: 16px;
+  grid-template-columns: auto;
+  overflow-x: scroll;
+  padding: 4px;
+  height: fit-content !important;
+}
+.reg_cards::-webkit-scrollbar {
+  display: none;
+}
+.date_card {
+  display: block !important;
+  min-width: 242px !important;
+  max-width: 328px !important;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: fit-content !important;
+  padding: none;
+  border-radius: 4px;
+  box-shadow: 0 0 2px gray;
+  margin-bottom: 16px;
+}
+.date_card_title {
+  display: block !important;
+  font-family: "PF Handbook Pro";
+  font-size: 16px;
+  padding: 12px 16px 12px 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: left;
+  border-top-right-radius: inherit;
+  border-top-left-radius: inherit;
+  background-color: #f7f7f7;
+}
+
+.date_cardbody {
+  display: flex !important;
+  white-space: nowrap;
+  justify-content: space-between;
+  padding: 12px 16px 12px 16px;
+  height: 48px !important;
+  /* height: fit-content !important; */
+}
+.status {
+  width: 50%;
+  vertical-align: baseline;
+  font-family: "PF Encore Sans Pro";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-align: left;
+  height: fit-content !important;
+  margin-top: auto;
+  margin-bottom: auto;
+  color: #797979;
+}
+
+.status_type {
+  width: 50%;
+  margin-left: auto;
+  text-align: right !important;
+  color: #f7a500;
+  font-family: "PF Handbook Pro";
+  font-size: 18px;
+  /* vertical-align: baseline; */
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  height: fit-content !important;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+#book_session_form_btn {
+  display: block;
+  font-family: "PF Handbook Pro";
+  font-size: 16px;
+  width: fit-content !important;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: center;
+  padding: 8px 16px !important;
+  /* margin: 0px auto !important; */
+  margin: 8vh auto !important;
+  color: white;
+  background-color: #c7222a !important;
+}
+#book_session_form_btn:focus,
+#book_session_form_btn:active {
+  outline: none;
+  border: solid 1px white;
+  box-shadow: 0 0 8px red;
+}
+
+#title_bkr {
+  margin: 0;
+  width: 100%;
+  display: flex;
+  height: fit-content;
+  font-family: "PF Handbook Pro";
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: black;
+}
+#inst_bkr {
+  margin: 0;
+  height: fit-content;
+  font-family: "PF Encore Sans Pro";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+#mobile_num,
+#email_id {
+  font-family: "PF Encore Sans Pro";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin: 8px 0;
+}
+#mobile_num_ip,
+#email_ip {
+  padding: 8px 16px;
+  margin: 8px 0;
+  border-radius: 4px;
+  border: solid 1px gray;
+  box-shadow: 0 0 2px gray;
+  width: 100%;
+}
+#submit_br {
+  display: block;
+  font-family: "PF Handbook Pro";
+  background-color: #c7222a;
+  color: white;
+  margin: 8px auto;
+}
+#submit_br:focus,
+#submit_br:active,
+#submit_br:hover {
+  outline: none;
+  border: solid 1px white;
+  box-shadow: 0 0 8px red;
+}
+
+.divider_or {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.request_callback {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.request_callback h3 {
+  font-family: "PF Handbook Pro";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px !important;
+  letter-spacing: 0px;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+#req_callback_btn {
+  background-color: #ffe7e5;
+  color: #c7222a;
+  font-family: "PF Handbook Pro";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+#req_callback_btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+.sponsors_div {
+  width: 100%;
+  margin: 16px 0px;
+  display: flex;
+  float: left;
+}
+#req_cb_modal_header {
+  display: flex;
+  flex-direction: column;
+}
+#req_cb_modal_title {
+  margin: 0;
+  width: fit-content !important;
+  height: fit-content;
+  width: fit-content;
+  font-family: "PF Handbook Pro";
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  float: left;
+}
+#req_cb_modal_p {
+  margin: 0;
+  height: fit-content;
+  font-family: "PF Encore Sans Pro";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.inner-body {
+  height: calc(100%);
+  width: calc(100%);
+  overflow-y: scroll !important;
+  padding: 4px;
+}
+#mob_num_lbl {
+  font-family: "PF Encore Sans Pro";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin: 8px 0;
+}
+
+#mob_num_ip {
+  width: 100%;
+  font-family: "PF Encore Sans Pro";
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: none;
+  box-shadow: 0 0 4px gray;
+  margin: 8px 0;
+}
+#disclaimer {
+  font-family: "PF Encore Sans Pro";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+#disclaimer_info {
+  font-family: "PF Encore Sans Pro";
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+#submit_cb_re_btn {
+  font-family: "PF Handbook Pro";
+  display: block;
+  background-color: #c7222a;
+  color: white;
+  margin: 4px auto;
+}
+#submit_cb_re_btn:focus,
+#submit_cb_re_btn:active,
+#submit_cb_re_btn:hover {
+  outline: none;
+  box-shadow: 0 0 8px red;
+}
+
+#grt_btn {
+  background-color: #c7222a !important;
+  color: white !important;
+  font-family: "PF Handbook Pro" !important;
+  display: block !important;
+  width: fit-content !important;
+  padding: auto 16px !important;
+  margin: 16px auto !important;
+}
+
+.sponsor h4 {
+  width: fit-content;
+  font-family: "PF Encore Sans Pro";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0.32px;
+  text-align: left;
+  vertical-align: middle;
+}
+.tnc {
+  margin-left: auto;
+}
+.tnc a {
+  font-family: "PF Encore Sans Pro";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0.75px;
+  text-align: left;
+  color: #797979;
+  vertical-align: middle;
+}
+
+.test_results {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.first_test_res {
+  margin: 32px 16px;
+  padding: 16px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 2px gray;
+}
+.ftr_title {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+.ftr_title_txt {
+  font-family: "PF Handbook Pro";
+  width: fit-content;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0px;
+  text-align: left;
+  vertical-align: middle;
+}
+#ftr_link_txt {
+  color: #c7222a;
+  margin-left: auto;
+  text-decoration: none;
+}
+.ftr_info {
+  font-family: "PF Encore Sans Pro";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.detail_test_res {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.dtb_space {
+  width: 100%;
+  padding: 8px 16px;
+}
+#detail_test_btn {
+  width: 100%;
+  display: flex;
+  color: black;
+}
+#detail_test_btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+#dtb_txt{
+  font-family: "PF Handbook Pro";
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  }
+#detail_test_results {
+  padding: 0 16px !important;
+}
+#dtb_arrow {
+  margin-left: auto;
+}
+.collapse {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.card {
+  width: 100%;
+  padding: 16px;
+  margin: 8px 0;
+}
+
+.test_res_card_title {
+  font-family: "PF Handbook Pro";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+  vertical-align: middle;
+}
+.test_res_card_title p {
+  font-size: 18px;
+}
+.badge {
+  height: 20px;
+  display: inline;
+  margin: auto 0;
+  width: auto;
+  border-radius: 4px;
+  font-family: "PF Encore Sans Pro";
+  font-size: 10px !important;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 12px !important;
+  letter-spacing: 1.5px;
+  text-align: left;
+  vertical-align: baseline !important;
+  color: white;
+}
+.badge.severe {
+  background-color: #c7222a;
+}
+.badge.moderate {
+  background-color: #f16548;
+}
+.badge.healthy {
+  background-color: #1f874c;
+}
+.badge.mild{
+  background: #008000;
+  color: black;
+}
+
+.test_res_card_info {
+  font-family: "PF Encore Sans Pro";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: left;
+  vertical-align: middle;
+}
+.download_btn {
+  width: 100%;
+  padding: 16px;
+}
+
+.download_btn_space {
+  width: 100%;
+  margin-bottom: 32px;
+}
+#download_test_res_btn {
+  width: 100%;
+  border-radius: 4px;
+  background-color: white;
+  border: solid #c7222a 1px;
+  padding: 8px 16px 8px 16px;
+  color: #c7222a;
+}
+#download_test_res_btn:active,
+#download_test_res_btn:hover {
+  box-shadow: 0 0 2px gray;
+}
+
+#download_test_res_btn:focus {
+  outline: none;
+  box-shadow: 0 0 4px red;
+}
+.review {
+  display: flex;
+  width: 100% !important;
+  height: fit-content;
+  padding: 16px;
+}
+.vote_q {
+  width: 70%;
+}
+.review h1 {
+  font-family: "PF Handbook Pro";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+  vertical-align: middle;
+  margin-bottom: 4px;
+}
+.inner_review{
+width: 100%;
+display: flex;
+padding: 16px;
+background-color: white;
+border-radius: 4px;
+box-shadow: 0 0 2px gray;
+
+}
+.inner_review p {
+  font-family: "PF Encore Sans Pro";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin-top: 4px;
+  margin-bottom: 0;
+}
+.vote_btn {
+  width: 30%;
+  display: flex;
+  justify-content: right;
+}
+.vote {
+  width: 36px;
+  height: 36px;
+  margin: 8px;
+  border: none;
+  background-color: #f7f7f7;
+  color: #797979;
+  font-size: 17px;
+}
+#upvote:active,
+#upvote:hover,
+#upvote:focus {
+  background-color: #e7fcf4;
+  color: #1f874c;
+}
+
+#downvote:active,
+#downvote:hover,
+#downvote:focus {
+  background-color: #ffe7e5;
+  color: #c7222a;
+}
+#upvote,
+#downvote {
+  border-radius: 4px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+::-webkit-scrollbar{
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .items {
+    max-height: 900px;
+    overflow-y: scroll;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: flex-start;
+    padding: 4vh;
+  }
+
+  .background,
+  .consult_expert_section,
+  .test_results {
+    width: 50%;
+  }
+
+  .background {
+    margin-bottom: 10px;
+  }
+  .first_test_res {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  .dtb_space {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .download_btn {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+
+#requestsent{
+  display: none !important;
+
+}

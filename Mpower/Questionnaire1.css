@@ -1,0 +1,291 @@
+body {
+  font-family: "PF Handbook Pro";
+  background-image: url();
+}
+.navbar {
+  width: 100%;
+  height: 44px;
+  background-color: #c7222a;
+}
+.back {
+  height: inherit;
+  color: white;
+  border: none;
+}
+.back.btn i {
+  color: white;
+}
+.back.btn:focus {
+  outline: solid white 1px;
+  box-shadow: none;
+}
+.navbar-brand {
+  color: white;
+  font-family: "PF Handbook Pro";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0px;
+  text-align: left;
+  vertical-align: middle;
+}
+.navbar-brand:active,
+.navbar-brand:hover {
+  color: white;
+}
+
+.background1 {
+  height: 288px;
+  width: 100%;
+  background-color: #c7222a;
+  z-index: -1;
+}
+.content {
+  position: absolute;
+  width: 100%;
+  top: 48px;
+  z-index: 0;
+}
+.para1 {
+  width: 90%;
+  margin: 16px auto 8px auto;
+  font-family: "PF Handbook Pro";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.3199999928474426px;
+  text-align: left;
+  color: white;
+}
+.prog {
+  width: 80vw;
+  display: flex;
+  justify-content: space-between;
+  margin: auto auto;
+}
+.progress {
+  margin: 8px auto 48px auto;
+  height: 4px !important;
+  min-width: 90%;
+  border-radius: 4px;
+}
+
+.progress-bar {
+  height: 4px;
+  border-radius: 4px;
+  background-color: #f8bf63 !important;
+}
+.ratio_questions {
+  width: fit-content;
+  display: inline;
+  color: white;
+  font-family: "PF Encore Sans Pro";
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 12px;
+  letter-spacing: 1.5px;
+  text-align: left;
+  margin: 4px auto 48px 8px;
+}
+
+.background {
+  display: block;
+  white-space: nowrap;
+}
+
+.questions_form {
+  position: relative;
+  top: -32px;
+  display: flex;
+  grid-gap: 6vw;
+  grid-template-columns: auto;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  height: fit-content;
+  padding-top: 44px;
+  padding-bottom: 16px;
+}
+.questions_form::-webkit-scrollbar {
+  display: none;
+}
+
+.question_container {
+  /* display: inline-block; */
+  min-width: 72vw;
+  margin: auto;
+  padding: 2vw;
+  padding-bottom: 0;
+  padding-top: 0;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 8px gray;
+  -webkit-transform: scale(1, 0.8);
+  -moz-transform: scale(1, 0.8);
+  transform: scale(1, 0.8);
+
+}
+.question_container.active {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  transform: scale(1);
+}
+
+.qa_container {
+  position: relative;
+  width: 100%;
+}
+.qa_container img {
+  position: relative;
+  top: -32px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 4px;
+}
+.qa {
+  position: relative;
+  top: -24px;
+  width: 100%;
+  box-shadow: 0px 2px 4px 0px #d5d7de33;
+  box-shadow: 0px 1px 10px 0px #d5d7de1f;
+  box-shadow: 0px 4px 5px 0px #d5d7de24;
+}
+.question {
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+
+.eg {
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0.32px;
+  text-align: center;
+}
+
+.answer {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  padding: 8px 16px;
+  min-height: 36px;
+  width: 80%;
+  left: 0px;
+  top: 0px;
+  border-radius: 7px;
+  border: 1px solid #d5d7de;
+  background: #ffffff;
+}
+.radio.selected {
+  background-color: #f2f6fe;
+  box-shadow: 0px 2px 4px 0px #d5d7de33;
+
+  box-shadow: 0px 1px 10px 0px #d5d7de1f;
+
+  box-shadow: 0px 4px 5px 0px #d5d7de24;
+  border: 1px solid #8cace7;
+  color: #4374d0;
+}
+
+.optionno {
+  /* height: 20px; */
+  width: 10%;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.optiondesc {
+  /* height: 16px; */
+  width: 90%;
+  /* padding: 11px auto 9px 4px; */
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0.3199999928474426px;
+  text-align: left;
+}
+.footer {
+  display: flex;
+  position: relative;
+  top: -16px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 14px;
+  margin-bottom: 8px;
+}
+.btn {
+  font-family: "PF Handbook Pro";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+#prevbtn:active,
+#prevbtn:hover {
+  border: solid gray 1px;
+  box-shadow: 0 0 4px gray;
+}
+#prevbtn:focus {
+  border: solid gray 1px;
+  box-shadow: 0 0 4px gray;
+}
+
+#nextbtn {
+  background-color: #e6e6e6;
+  color: black;
+  float: right;
+  margin-left: auto;
+}
+.nextbtn_txt{
+  margin-right: 1.5vh;
+}
+.prevbtn_txt{
+  margin-left: 1.5vh;
+}
+
+#nextbtn:active,
+#nextbtn:hover {
+  border: solid #c7222a 1px;
+  box-shadow: 0 0 4px #c7222a;
+}
+#nextbtn:focus {
+  border: solid #c7222a 1px;
+  box-shadow: 0 0 4px #c7222a;
+}
+
+
+
+/* questionary result show */
+#Results_req{
+  display: none;
+}
+
+@media screen and (max-width: 568px) {
+  .question_container{
+    min-width: 80vw !important;
+  }
+}
