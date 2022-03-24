@@ -1,3 +1,6 @@
+*{
+    background:"red";
+}
 .modal1-body ::-webkit-scrollbar{
     display: none;
 }
